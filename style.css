@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-color: hsl(216, 12%, 8%);
+    font-family: 'Overpass', sans-serif;
+}
+/* ELEMENTS */
+h1{
+    color: hsl(0, 0%, 100%);
+    margin: 0;
+}
+p{
+    color: hsl(217, 12%, 63%);
+    font-size: 15px;
+}
+
+/* RATING STATE */
+.rating-state{
+    background-color: hsl(213, 19%, 18%);
+    height: 46vh;
+    width: 280px;
+    position: relative;
+    top: 25vh;
+    margin: auto;
+    padding: 4vh;
+    border-radius: 20px;
+}
+.star-icon{
+    background-color: hsl(216, 4%, 25%);
+    padding: 1rem;
+    border-radius: 4rem;
+}
+    /* BTNS */ 
+.btn{
+    height: 3rem;
+    width: 3rem;
+    background-color: hsl(216, 4%, 25%);
+    color: hsl(217, 12%, 63%);
+    border: none;
+    border-radius: 100px;
+}
+.btn:hover{
+    background-color: hsl(216, 12%, 54%);
+}
+.btn-container{
+    display: flex;
+    justify-content: space-between;
+}
+.submit{
+    width: 100%;
+    height: 3rem;
+    margin-top: 1rem;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    border-radius: 40px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+.submit:hover{
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(0, 0%, 100%);
+}
+
+/* THANK YOU STATE */
+
+
+.thank-you-state{
+    display: none;
+    background-color: hsl(213, 19%, 18%);
+    height: 46vh;
+    width: 280px;
+    position: relative;
+    top: 25vh;
+    margin: auto;
+    padding: 4vh;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.selected{
+    color: hsl(25, 97%, 53%)
+}
+
+@media only screen and (min-width: 376px) {
+    .submit{
+        margin-top: 2rem;
+    }
+    .rating-state {
+        width: 20.5vw;
+        height: fit-content;
+    }
+    .thank-you-state{
+        width:2řvw;
+        height: fit-content;
+    }
+}
